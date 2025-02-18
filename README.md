@@ -1,18 +1,60 @@
-# Titanic-Survival-Analysis
-Analysis of Titanic survival data using Python and Pandas 
 # Titanic Survival Analysis
 
-## Overview
-This project analyzes the survival rates of passengers on the Titanic based on gender, passenger class, and age categories.
+## 📌 Project Overview
+This project analyzes the Titanic dataset to identify factors affecting passenger survival rates. It utilizes Python and the Pandas library to clean, explore, and visualize the data.
 
-## Dataset
-The dataset used is the Titanic dataset, which contains information about passengers, including their survival status, age, gender, and class.
+## 📊 Features
+- Data Cleaning and Preprocessing
+- Exploratory Data Analysis (EDA)
+- Survival Rate Analysis by Class, Gender, and Age
+- Visualizations using Matplotlib and Seaborn
+- Machine Learning Model for Predicting Survival (Optional)
 
-## Code
-The analysis is performed using Python and Pandas. The script calculates survival rates for different groups and prints the results.
+## 🛠️ Technologies Used
+- **Python**
+- **Pandas**
+- **Matplotlib & Seaborn**
+- **Jupyter Notebook**
 
-## How to Run
-1. Clone this repository.
-2. Install the required dependencies:
+## 📂 Repository Structure
+```
+📁 Titanic-Survival-Analysis
+│-- 📂 data                # Contains Titanic dataset (CSV files)
+│-- 📂 notebooks           # Jupyter notebooks for analysis
+│-- 📂 scripts             # Python scripts for data processing (if applicable)
+│-- README.md             # Project documentation
+```
+
+## 🚀 Installation & Usage
+1. **Clone the Repository**
    ```bash
-   pip install pandas  
+   git clone https://github.com/your-username/Titanic-Survival-Analysis.git
+   cd Titanic-Survival-Analysis
+   ```
+2. **Install Dependencies**
+   ```bash
+   pip install pandas matplotlib seaborn jupyter
+   ```
+3. **Run Jupyter Notebook**
+   ```bash
+   jupyter notebook
+   ```
+
+## 📈 Example Analysis
+Here’s a sample visualization from the project:
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.barplot(x='Pclass', y='Survived', data=titanic_df)
+plt.title('Survival Rate by Passenger Class')
+plt.show()
+```
+
+## 📜 License
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+Feel free to open an issue or submit a pull request if you’d like to improve this project!
+
+
